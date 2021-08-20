@@ -16,8 +16,8 @@ docker-compose up -d
 # 動作確認
 ```
 $ curl -X POST http://localhost:5000/hoges \
-  -H ">   -H "Content-Type:application/json" \
->   -d "{\"name\":\"hoge3\",\"state\":\"hoge3\"}"
+-H "Content-Type:application/json" \
+-d "{\"name\":\"hoge3\",\"state\":\"hoge3\"}"
 {
     "state": "hoge3",
     "name": "hoge3",
@@ -122,7 +122,7 @@ $ curl http://localhost:5000/hoges
 
 # DBの中身参考
 ```
-mysql> select *from hoges;
+mysql> select * from hoges;
 +--------------------------------------+---------------+-------+---------------------+---------------------+
 | id                                   | name          | state | createTime          | updateTime          |
 +--------------------------------------+---------------+-------+---------------------+---------------------+
